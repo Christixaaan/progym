@@ -1,4 +1,2 @@
-RewriteEngine On
-RewriteBase /
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule (.*) $1.html
+RewriteEngine on
+RewriteRule ([-0-9a-zA-Z]*)$ $1.html
