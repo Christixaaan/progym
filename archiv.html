@@ -118,34 +118,35 @@
 	
 	<!--Moduls-->
 	<script>
-		const slider = document.querySelector('.slider');
-		const slides = slider.querySelector('.slides');
-		const slideList = slides.querySelectorAll('img');
-		const prevBtn = slider.querySelector('.prev-btn');
-		const nextBtn = slider.querySelector('.next-btn');
-		let currentSlide = 0;
-		const slideWidth = slideList[0].clientWidth;
+const slider = document.querySelector('.slider2');
+const slides = slider.querySelector('.slides2');
+const slideList = slides.querySelectorAll('img');
+const prevBtn = slider.querySelector('.prev-btn2');
+const nextBtn = slider.querySelector('.next-btn2');
+let currentSlide= 0;
+const slideWidth = slideList[0].clientWidth;
 
-		slides.style.transform = `translateX(${-slideWidth * currentSlide}px)`;
+slides.style.transform = `translateX(${-slideWidth * currentSlide}px)`;
 
-		function moveToSlide(slideIndex) {
-		  if (slideIndex < 0 || slideIndex >= slideList.length) {
-		    return;
-		  }
-		  currentSlide = slideIndex;
-		  slides.style.transform = `translateX(${-slideWidth * currentSlide}px)`;
-		}
+function moveToSlide(slideIndex) {
+  if (slideIndex < 0 || slideIndex >= slideList.length) {
+    return;
+  }
+  currentSlide = slideIndex;
+  slides.style.transform = `translateX(${-slideWidth * currentSlide}px)`;
+}
 
-		function moveToNextSlide() {
-		  moveToSlide(currentSlide + 1);
-		}
+function moveToNextSlide() {
+  moveToSlide(currentSlide + 1);
+}
 
-		function moveToPrevSlide() {
-		  moveToSlide(currentSlide - 1);
-		}
+function moveToPrevSlide() {
+  moveToSlide(currentSlide - 1);
+}
 
-		prevBtn.addEventListener('click', moveToPrevSlide);
-		nextBtn.addEventListener('click', moveToNextSlide);
+prevBtn.addEventListener('click', moveToPrevSlide);
+nextBtn.addEventListener('click', moveToNextSlide);
+
 	</script>
 	
 	<div class="modal fade" id="2005-06" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -159,16 +160,16 @@
 			  <p>
 
 
-<div class="slider">
-  <div class="slides">
+<div class="slider2">
+  <div class="slides2">
     <img src="https://www.ndr.de/radiomv/bildersuche102_v-fullhd.jpg" alt="Image 1">
     <img src="https://www.puetter-online.de/fileadmin/user_upload/Blog/suchoptionen-google-bildersuche.png" alt="Image 2">
     <img src="https://static.giga.de/wp-content/uploads/2018/03/Google-Bilderkennung-Rueckwaerts-Bildersuche-Titelbild-rcm1920x1080u.jpg">
     <img src="https://www.ndr.de/radiomv/bildersuche102_v-fullhd.jpg" alt="Image 3">
   </div>
-  <div class="controls">
-    <button class="prev-btn">Prev</button>
-    <button class="next-btn">Next</button>
+  <div class="controls2">
+    <button class="prev-btn2">Prev</button>
+    <button class="next-btn2">Next</button>
   </div>
 </div>
 
