@@ -3872,6 +3872,67 @@ a.link-style3 {
 	color: #eea412;
 }
 
+.popup-slider {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-slider-wrapper {
+  position: relative;
+  width: 500px;
+  height: 300px;
+  overflow: hidden;
+}
+
+.popup-slider-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.popup-slider-slide.active {
+  opacity: 1;
+}
+
+.popup-slider-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  vertical-align: middle;
+}
+
+.popup-slider-controls {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  display: flex;
+}
+
+.popup-slider-control {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #fff;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.popup-slider-control.active {
+  background: #000;
+}
 
 
 
