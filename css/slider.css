@@ -1,47 +1,44 @@
-.slider2 {
-  position: relative;
-  width: 600px;
+ img{
+    min-width: 500px;
+    height: 400px;  
+  }
+
+.containersl{
+  min-width: 500px;
   height: 400px;
-  overflow: hidden;
-}
-
-.slides2 {
+  margin: 0 auto;
+  background-color:#363537;
   display: flex;
+  justify-content:space-between;
+  align-items: center;
+  flex-direction: row;
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.slides2 img2 {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.controls2 {
-  display: flex;
-  justify-content: space-between;
-  position: absolute;
-  bottom: 10px;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
-  width: 200px;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  border: 7px solid #fff;
+  background: url(https://i.redd.it/wpn9t2egd7cy.png) center center no-repeat;
+  background-size: cover;
 }
 
-.prev-btn2, .next-btn2 {
-  width: 80px;
-  height: 40px;
-  background-color: #333;
+button {
+  font-size: 50px;
+  padding: 5px 10px;
+  background-color: #3a4a63;
+  border: 4px solid #fff;
+  border-radius: 10px;
+}
+.fa-angle-left,
+.fa-angle-right{
   color: #fff;
-  border: none;
-  border-radius: 20px;
-  font-size: 16px;
-  cursor: pointer;
 }
-
-.prev-btn2:hover, .next-btn2:hover {
-  background-color: #666;
+.leftsl{
+  position: relative;
+  left: -25px;
 }
-
+.rightsl{
+  position: relative;
+  left: 25px;
+}
+*/
