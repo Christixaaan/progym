@@ -1,9 +1,9 @@
-const slider = document.querySelector('.slider');
-const slides = slider.querySelector('.slides');
+const slider = document.querySelector('.slider2');
+const slides = slider.querySelector('.slides2');
 const slideList = slides.querySelectorAll('img');
-const prevBtn = slider.querySelector('.prev-btn');
-const nextBtn = slider.querySelector('.next-btn');
-let currentSlide = 0;
+const prevBtn = slider.querySelector('.prev-btn2');
+const nextBtn = slider.querySelector('.next-btn2');
+let currentSlide= 0;
 const slideWidth = slideList[0].clientWidth;
 
 slides.style.transform = `translateX(${-slideWidth * currentSlide}px)`;
