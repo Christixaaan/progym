@@ -1,25 +1,28 @@
-const slider = document.querySelector('.sliderar');
-const prevBtn = document.querySelector('.prevar');
-const nextBtn = document.querySelector('.nextar');
+const slider = document.querySelector('.slider');
+const slides = slider.querySelector('.slides');
+const slideList = slides.querySelectorAll('img');
+const prevBtn = slider.querySelector('.prev-btn');
+const nextBtn = slider.querySelector('.next-btn');
+let currentSlide = 0;
+const slideWidth = slideList[0].clientWidth;
 
-let counter = 0;
+slides.style.transform = `translateX(${-slideWidth * currentSlide}px)`;
 
-function slide() {
-  slider.style.transform = `translateX(-${counter * 500}px)`;
+function moveToSlide(slideIndex) {
+  if (slideIndex < 0 || slideIndex >= slideList.length) {
+    return;
+  }
+  currentSlide = slideIndex;
+  slides.style.transform = `translateX(${-slideWidth * currentSlide}px)`;
 }
 
-nextBtn.addEventListener('click', () => {
-  counter++;
-  if (counter >= 3) {
-    counter = 0;
-  }
-  slide();
-});
+function moveToNextSlide() {
+  moveToSlide(currentSlide + 1);
+}
 
-prevBtn.addEventListener('click', () => {
-  counter--;
-  if (counter < 0) {
-    counter = 2;
-  }
-  slide();
-});
+function moveToPrevSlide() {
+  moveToSlide(currentSlide - 1);
+}
+
+prevBtn.addEventListener('click', moveToPrevSlide);
+nextBtn.addEventListener('click', moveToNextSlide);
