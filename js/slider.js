@@ -1,81 +1,28 @@
-const popupSlider = document.querySelector('.popup-slider');
-const popupSliderWrapper = document.querySelector('.popup-slider-wrapper');
-const popupSliderSlides = document.querySelectorAll('.popup-slider-slide');
-const popupSliderControls = document.querySelector('.popup-slider-controls');
-const popupSliderControlItems = document.querySelectorAll('.popup-slider-control');
+let slideIndex = 1;
+showSlides(slideIndex);
 
-let slideIndex = 0;
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
 
-// Display the first slide
-popupSliderSlides[slideIndex].classList.add('active');
-popupSliderControlItems[slideIndex].classList.add('active');
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
 
-// Next slide
-function nextSlide() {
-  popupSliderSlides[slideIndex].classList.remove('active');
-  popupSliderControlItems[slideIndex].classList.remove('active');
-  slideIndex++;
-  if (slideIndex >= popupSliderSlides.length) {
-    slideIndex = 0;
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
   }
-  popupSliderSlides[slideIndex].classList.add('active');
-  popupSliderControlItems[slideIndex].classList.add('active');
-}
-
-// Previous slide
-function prevSlide() {
-  popupSliderSlides[slideIndex].classList.remove('active');
-  popupSliderControlItems[slideIndex].classList.remove('active');
-  slideIndex--;
-  if (slideIndex < 0) {
-    slideIndex = popupSliderSlides.length - 1;
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
   }
-  popupSliderSlides[slideIndex].classList.add('active');
-  popupSliderControlItems[slideIndex].classList.add('active');
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
 }
-
-// Add event listeners to the control items
-popupSliderControlItems.forEach((item, index) => {
-  item.addEventListener('click', () => {
-    popupSliderSlides[slideIndex].classList.remove('active');
-    popupSliderControlItems[slideIndex].classList.remove('active');
-    slideIndex = index;
-    popupSliderSlides[slideIndex].classList.add('active');
-    popupSliderControlItems[slideIndex].classList.add('active');
-  });
-});
-
-// Open the popup slider
-function openPopupSlider() {
-  popupSlider.style.display = 'flex';
-}
-
-// Close the popup slider
-function closePopupSlider() {
-  popupSlider.style.display = 'none';
-}
-
-// Add event listeners to the wrapper and controls
-popupSliderWrapper.addEventListener('click', (e) => {
-  e.stopPropagation();
-});
-popupSliderControls.addEventListener('click', (e) => {
-  e.stopPropagation();
-});
-popupSliderWrapper.addEventListener('swipeleft', () => {
-  nextSlide();
-});
-popupSliderWrapper.addEventListener('swiperight', () => {
-  prevSlide();
-});
-document.addEventListener('keydown', (e) => {
-  if (e.keyCode === 37) {
-    prevSlide();
-  } else if (e.keyCode === 39) {
-    nextSlide();
-  }
-});
-
-// Add event listeners to open and close the popup slider
-document.querySelector('.open-popup-slider').addEventListener('click', openPopupSlider);
-document.querySelector('.close-popup-slider').addEventListener('click', closePopupSlider);
