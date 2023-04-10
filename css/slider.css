@@ -1,11 +1,46 @@
-.sliderar {
-  display: flex;
+.slider {
+  position: relative;
+  width: 600px;
+  height: 400px;
   overflow: hidden;
-  width: 500px;
-  height: 300px;
 }
-.sliderar imgar {
-  width: 500px;
-  height: 300px;
+
+.slides {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.slides img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+}
+
+.prev-btn, .next-btn {
+  width: 80px;
+  height: 40px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.prev-btn:hover, .next-btn:hover {
+  background-color: #666;
 }
