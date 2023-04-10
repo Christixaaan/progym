@@ -1,28 +1,25 @@
-let slideIndex = 1;
-showSlides(slideIndex);
+const slider = document.querySelector('.sliderar');
+const prevBtn = document.querySelector('.prevar');
+const nextBtn = document.querySelector('.nextar');
 
-// Next/previous controls
-function plusSlidesar(n) {
-  showSlides(slideIndex += n);
+let counter = 0;
+
+function slide() {
+  slider.style.transform = `translateX(-${counter * 500}px)`;
 }
 
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlidesar");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+nextBtn.addEventListener('click', () => {
+  counter++;
+  if (counter >= 3) {
+    counter = 0;
   }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
+  slide();
+});
+
+prevBtn.addEventListener('click', () => {
+  counter--;
+  if (counter < 0) {
+    counter = 2;
   }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
+  slide();
+});
