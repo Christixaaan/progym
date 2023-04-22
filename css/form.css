@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 input[type="checkbox"] {
-  width: 18px;
-  height: 18px;
+  width: 14px;
+  height: 14px;
   margin-right: 10px;
 }
 .checkbox-text {
