@@ -11,7 +11,7 @@ body{
   justify-content: center;
   align-items: center;
   padding: 10px;
-  background-image: url("/progym-main/images/background-gym.png")
+  background-image: url("/images/background-gym.png")
 }
 .container{
   max-width: 700px;
