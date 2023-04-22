@@ -134,25 +134,25 @@
                 <div class="col-xl-6 col-md-12 col-sm-12">
                     <div class="contact_form">
                         <div id="message"></div>
-                        <form id="contactform" class="" action="contact.php" name="contactform" method="post">
+                        <form id="contactform" class="" action="post.php" name="contactform" method="POST">
                             <div class="row row-fluid">
                                 <div class="col-lg-6 col-md-6 col-sm-6">
-                                    <input type="text" name="first_name" id="first_name" class="form-control" placeholder="Vorname">
+                                    <input type="text" name="first_name" id="first_name" class="form-control" placeholder="Vorname" required>
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-6">
-                                    <input type="text" name="last_name" id="last_name" class="form-control" placeholder="Nachname">
+                                    <input type="text" name="last_name" id="last_name" class="form-control" placeholder="Nachname" required>
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-6">
-                                    <input type="email" name="email" id="email" class="form-control" placeholder="Email Adresse">
+                                    <input type="email" name="email" id="email" class="form-control" placeholder="Email Adresse" required>
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-6">
-                                    <input type="text" name="phone" id="phone" class="form-control" placeholder="Betreff">
+                                    <input type="text" name="concern" id="concern" class="form-control" placeholder="Betreff">
                                 </div>
                                 <div class="col-lg-12 col-md-12 col-sm-12">
-                                    <textarea class="form-control" name="comments" id="comments" rows="6" placeholder="Deine Nachricht an uns ...."></textarea>
+                                    <textarea class="form-control" name="comments" id="comments" rows="6" placeholder="Deine Nachricht an uns ...." required></textarea>
                                 </div>
-                                <div class="text-center pd">
-                                    <button type="submit" value="SEND" id="submit" class="btn btn-light btn-radius btn-brd grd1 btn-block">Abschicken</button>
+                                <div class="text-center pd" id="submit-form">
+                                    <input type="submit" name="submit" value="Abschicken" class="btn btn-light btn-radius btn-brd grd1 btn-block">
                                 </div>
                             </div>
                         </form>

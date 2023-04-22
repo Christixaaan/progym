@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="css/responsive.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/custom.css">
+	<link rel="stylesheet" href="css/form.css">
 
     <!-- Modernizer for Portfolio -->
     <script src="js/modernizer.js"></script>
@@ -67,7 +68,77 @@
 			</div>
 			<div class="modal-body customer-box">
 			<p>
-			<div data-aidaform-widget="form-2019-12" data-url="https://christiaaaan.aidaform.com/expert-vorlage-abonnement-bestellformular-mit-mehreren-produkten" data-width="100%" data-height="500px" data-do-resize></div><script>(function(){var r,d=document,gt=d.getElementById,cr=d.createElement,tg=d.getElementsByTagName,id="aidaform-embed";if(!gt.call(d,id)){r=cr.call(d,"script");r.id=id;r.src="https://embed.aidaform.com/embed.js";(d.head || tg.call(d,"head")[0]).appendChild(r);}})()</script>
+
+	<div class="content">
+      <form action="action.php" method="post">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Akademischer Grad</span>
+            <input type="text" name="title" placeholder="">
+          </div>
+          <div class="input-box">
+            <span class="details">Vor- und Nachname</span>
+            <input type="text" name="name" placeholder="" required>
+          </div>
+          <div class="input-box">
+            <span class="details">E-Mail</span>
+            <input type="email" name="email" placeholder="" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Telefonnummer</span>
+            <input type="text" name="phone" placeholder="" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Straße</span>
+            <input type="text" name="street" placeholder="" required>
+          </div>
+          <div class="input-box">
+            <span class="details">PLZ / Ort</span>
+            <input type="text" name="zipcode" placeholder="" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Geburtsdatum</span>
+            <input type="text" name="birthdate" placeholder="" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Eintrittsdatum</span>
+            <input type="text" name="entrydate" placeholder="" required>
+          </div>
+        </div>
+        <div class="gender-details">
+          <input type="radio" name="membership" value="ordentliches-mitglied-student*in" id="dot-1">
+          <input type="radio" name="membership" value="ordentliches-mitglied" id="dot-2">
+          <input type="radio" name="membership" value="förderndes-mitglied" id="dot-3">
+          <span class="gender-title">Jährliche Mitgliedschaft</span>
+          <div class="category">
+            <label for="dot-1">
+            <span class="dot one"></span>
+            <span class="gender">Ordentliches Mitglied (Student*in)</span>
+          </label>
+          <label for="dot-2">
+            <span class="dot two"></span>
+            <span class="gender">Ordentliches Mitglied</span>
+          </label>
+          <label for="dot-3">
+            <span class="dot three"></span>
+            <span class="gender">Förderndes Mitglied</span>
+            </label>
+          </div>
+        </div>
+	<br>
+          <div class="input-box">
+          	<span class="gender-title"> </span>
+            <input type="checkbox" name="checkbox" placeholder="" required>Ich erkläre hiermit, dass ich dem Verein <b style="color:#951b6e">„proGYM Absolventen- und Förderverein des BG / BRG St. Pölten“</b> als das oben gewählte <b style="color:#951b6e">Mitglied</b> beitreten möchte.
+          </div>
+
+        <div class="button">
+          <input type="submit" name="submit" value="Abschicken">
+        </div>
+      </form>
+    </div>
+  </div>
+				
+				
 			</div>
 		</div>
 	  </div>
