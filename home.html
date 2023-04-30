@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+   
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+     <!-- Site Metas -->
+    <title>ProGYM - Verein</title>  
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/favicon.ico?" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png?">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- ALL VERSION CSS -->
+    <link rel="stylesheet" href="css/versions.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+	<link rel="stylesheet" href="css/form.css">
+
+    <!-- Modernizer for Portfolio -->
+    <script src="js/modernizer.js"></script>
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body class="host_version"> 
+
+	<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-header tit-up">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h2 style="color:#951b6e"><b>Copyright Information</b></h2>
+			</div>
+			<div class="modal-body customer-box">
+			<p>
+			<h4>Das Template zu dieser Homepage stammt von <b><a style="color:#951b6e" target="__blank" href="https://html.design/">html.design</a></b> und ist unter <b><a style="color:#951b6e" target="__blank" href="https://creativecommons.org/licenses/by/3.0/at/deed.de">Creative Common 3.0</a></b> für den privaten als auch kommerziellen Zweck lizenziert! Veränderungen am ursprünglichem Template (zb. Aussehen & Text) wurden durchgeführt.</h4>
+			<p>
+			<h4>Verwendetes Template: <a style="color:#951b6e" target="__blank" href="https://html.design/download/smartedu-education-template/">SmartEDU</a></h4>
+			<p>
+			</div>
+		</div>
+	  </div>
+	</div>
+	
+	<div class="modal fade" id="mitglied" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-header tit-up">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h2 style="color:#951b6e"><b>Beitrittserklärung zu ProGYM</b></h2>
+			</div>
+			<div class="modal-body customer-box">
+			<p>
+
+	<div class="content">
+      <form action="action.php" method="post">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Akademischer Grad</span>
+            <input type="text" name="title" placeholder="">
+          </div>
+          <div class="input-box">
+            <span class="details">Vor- und Nachname</span>
+            <input type="text" name="name" placeholder="" required>
+          </div>
+          <div class="input-box">
+            <span class="details">E-Mail</span>
+            <input type="email" name="email" placeholder="" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Telefonnummer</span>
+            <input type="text" name="phone" placeholder="" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Straße</span>
+            <input type="text" name="street" placeholder="" required>
+          </div>
+          <div class="input-box">
+            <span class="details">PLZ / Ort</span>
+            <input type="text" name="zipcode" placeholder="" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Geburtsdatum</span>
+            <input type="text" name="birthdate" placeholder="" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Eintrittsdatum</span>
+            <input type="text" name="entrydate" placeholder="" required>
+          </div>
+        </div>
+		  <hr class="solid">
+        <div class="gender-details">
+          <input type="radio" name="membership" value="ordentliches-mitglied-student*in" id="dot-1" required>
+          <input type="radio" name="membership" value="ordentliches-mitglied" id="dot-2" required>
+          <input type="radio" name="membership" value="förderndes-mitglied" id="dot-3" required>
+          <span class="gender-title">Jährliche Mitgliedschaft</span>
+          <div class="category">
+            <label for="dot-1">
+            <span class="dot one"></span>
+            <span class="gender">Ordentliches Mitglied (Student*in)</span>
+          </label>
+          <label for="dot-2">
+            <span class="dot two"></span>
+            <span class="gender">Ordentliches Mitglied</span>
+          </label>
+          <label for="dot-3">
+            <span class="dot three"></span>
+            <span class="gender">Förderndes Mitglied</span>
+            </label>
+          </div>
+        </div>
+		  <p>
+		  <hr class="solid">
+		 <br>
+          <div class="input-box">
+          	<span class="gender-title"> </span>
+            <input type="checkbox" name="checkbox" placeholder="" required><font size="+0.1">Ich erkläre hiermit, dass ich dem Verein <b style="color:#951b6e">„proGYM Absolventen- und Förderverein des BG / BRG St. Pölten“</b> als das oben gewählte <b style="color:#951b6e">Mitglied</b> beitreten möchte.</font>
+          </div>
+
+        <div class="button">
+          <input type="submit" name="submit" value="Abschicken">
+        </div>
+      </form>
+    </div>
+  </div>
+				
+				
+			</div>
+		</div>
+	  </div>
+	</div>
+
+    <!-- LOADER -->
+	<!--<div id="preloader">
+		<div class="loader-container">
+			<div class="progress-br float shadow">
+				<div class="progress__item"></div>
+			</div>
+		</div>
+	</div>-->
+	<!-- END LOADER -->	
+	
+	<!-- Start header -->
+	<header class="top-navbar">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="home.html">
+					<img src="images/logo.png" alt="" />
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-host" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbars-host">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item active"><a class="nav-link" href="home">Home</a></li>
+						<li class="nav-item"><a class="nav-link" href="vorstand">Vorstand</a></li>
+						<li class="nav-item"><a class="nav-link" href="projekte">Projekte</a></li>
+						<li class="nav-item"><a class="nav-link" href="archiv">Archiv</a></li>
+						<!--<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Course </a>
+							<div class="dropdown-menu" aria-labelledby="dropdown-a">
+								<a class="dropdown-item" href="course-grid-2.html">Course Grid 2 </a>
+								<a class="dropdown-item" href="course-grid-3.html">Course Grid 3 </a>
+								<a class="dropdown-item" href="course-grid-4.html">Course Grid 4 </a>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Blog </a>
+							<div class="dropdown-menu" aria-labelledby="dropdown-a">
+								<a class="dropdown-item" href="blog.html">Blog </a>
+								<a class="dropdown-item" href="blog-single.html">Blog single </a>
+							</div>
+						</li>-->
+						<!--<li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>-->
+						<li class="nav-item"><a class="nav-link" href="home#plan">Mitgliedschaft</a></li>
+						<li class="nav-item"><a class="nav-link" href="contact">Kontakt</a></li>
+						<!--<li class="nav-item"><a class="nav-link" href=""><i class="fa fa-user"></i></a></li>-->
+					</ul>
+					<!--<ul class="nav navbar-nav navbar-right">
+                        <li><a class="hover-btn-new log orange" href="#" data-toggle="modal" data-target="#login"><span>Book Now</span></a></li>
+                    </ul>-->
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- End header -->
+	
+	<div id="carouselExampleControls" class="carousel slide bs-slider box-slider" data-ride="carousel" data-pause="hover" data-interval="false" >
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+			<li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
+			<li data-target="#carouselExampleControls" data-slide-to="1"></li>
+			<li data-target="#carouselExampleControls" data-slide-to="2"></li>
+		</ol>
+		<div class="carousel-inner" role="listbox">
+			<div class="carousel-item active">
+				<div id="home" class="first-section" style="background-image:url('images/slider-03.jpg');">
+					<div class="dtab">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-12 col-sm-12 text-center">
+									<div class="big-tagline">
+										<h2 data-animation="animated zoomInRight"><strong>ProGYM</strong> Absolventen & Förderverein</h2>
+										<p class="lead" data-animation="animated fadeInLeft"></p>
+											<a href="https://www.bgstpoelten.ac.at/" target="_blank" class="hover-btn-new"><span>GYM Josefstraße</span></a>
+											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;									</div>
+								</div>
+							</div><!-- end row -->            
+						</div><!-- end container -->
+					</div>
+				</div><!-- end section -->
+			</div>
+			<div class="carousel-item">
+				<div id="home" class="first-section" style="background-image:url('images/slider-01.jpg');">
+					<div class="dtab">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-12 col-sm-12 text-right">
+									<div class="big-tagline">
+										<h2><strong>ProGYM </strong> Absolventen & Förderverein</h2>
+										<p class="lead"></p>
+											<a href="https://www.bgstpoelten.ac.at/" target="_blank" class="hover-btn-new"><span>GYM Josefstraße</span></a>
+											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									</div>
+								</div>
+							</div><!-- end row -->            
+						</div><!-- end container -->
+					</div>
+				</div><!-- end section -->
+			</div>
+			<div class="carousel-item">
+				<div id="home" class="first-section" style="background-image:url('images/slider-02.jpg');">
+					<div class="dtab">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-12 col-sm-12 text-left">
+									<div class="big-tagline">
+										<h2 data-animation="animated zoomInRight"><strong>ProGYM </strong> Absolventen & Förderverein</h2>
+										<p class="lead" data-animation="animated fadeInLeft"></p>
+											<a href="https://www.bgstpoelten.ac.at/" target="_blank" class="hover-btn-new"><span>GYM Josefstraße</span></a>
+											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									</div>
+								</div>
+							</div><!-- end row -->            
+						</div><!-- end container -->
+					</div>
+				</div><!-- end section -->
+			</div>
+			<!-- Left Control -->
+			<a class="new-effect carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+				<span class="fa fa-angle-left" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+
+			<!-- Right Control -->
+			<a class="new-effect carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+				<span class="fa fa-angle-right" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+	</div>
+	
+    <div id="overviews" class="section wb">
+        <div class="container">
+            <div class="section-title row text-center">
+                <div class="col-md-8 offset-md-2">
+                    <h3>Unser Verein</h3>
+                    <!--<p class="lead">Lorem Ipsum dolroin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem!</p>-->
+                </div>
+            </div><!-- end title -->
+        
+            <div class="row align-items-center">
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                    <div class="message-box">
+                        <!--<h4>2018 BEST SmartEDU education school</h4>-->
+						<p></p>
+                        <h2>Wer sind wir?</h2>
+                        <p>Wir sind eine Gemeinschaft von und für Absolvent*innen, Lehrer*innen und sonstigen Freund*innen des Gymnasiums St. Pölten. Wir wollen dazu beitragen, dass unsere (ehemalige) Schule mehr ist als ein Ort der Wissensvermittlung.</p>
+                    </div><!-- end messagebox -->
+                </div><!-- end col -->
+				
+				<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                    <div class="post-media wow fadeIn">
+                        <img src="https://www.collini.eu/wp-content/uploads/2018/06/gym-st.poelten-2018_2463-.jpg" alt="" class="img-fluid img-rounded">
+                    </div><!-- end media -->
+                </div><!-- end col -->
+			</div>
+			<p></p>
+			<div class="row align-items-center">
+				<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                    <div class="post-media wow fadeIn">
+                        <img src="images/01_Aussenanlage_72dpi.jpg" alt="" class="img-fluid img-rounded">
+                    </div><!-- end media -->
+                </div><!-- end col -->
+				
+				<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                    <div class="message-box">
+                        <h2>Wofür stehen wir?</h2>
+                        <p>Der Verein ergänzt die Schulpartnerschaft und bereichert sie um ein wesentliches Element. Die Kraft der Absolvent*innen soll in Zukunft für Schule und Schüler verstärkt nutzbar gemacht.</p>
+
+                        <p>Schule ist mehr als nur ein Gebäude:
+						<ul>
+							<li>Ort der Begegnung</li>
+							<li>Ort der Erfahrung</li>
+							<li>Ort der Jugend</li>
+						</ul></p>
+                    </div><!-- end messagebox -->
+                </div><!-- end col -->
+				
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
+
+    <section class="section lb page-section">
+	
+		<div class="container">
+			 <div class="section-title row text-center">
+                <div class="col-md-8 offset-md-2">
+                    <h3>Unterstützte Projekte</h3>
+                    <p class="lead">(2023 - 2008)</p>
+					<br>
+                </div>
+            </div><!-- end title -->
+			<div class="timeline">
+				<div class="timeline__wrap">
+					<div class="timeline__items">
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-07">
+								<h2>Maturantenfrühstück</h2>
+								<p>Am 28.04.2023 sponserte ProGYM den diesjährigen Maturant*innen zum Abschluss ein kleines Frühstück in der Aula unserer Schule!</p>
+							</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-04">
+								<h2>RoboCup Junior Austria</h2>
+								<p>In der Woche nach Ostern (12. - 14.04.2023) nahmen 7 Teams mit insgesamt 21 Schüler*innen unserer Schule am RoboCup Junior Austria teil. ProGYM war dabei einer der Sponsoren.</p>
+							</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-02">
+								<h2>First Lego League</h2>
+								<p>Am Freitag den 24.02.2023 traten 12 Teams mit Schüler*innen im Alter von 9 bis 16 Jahren in der First Lego League (FLL, Lego-Roboter Wettbewerb) im WiFi in St. Pölten gegeneinander an.</p>
+							</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-06">
+								<h2>Tischfußball- & Tischtennistische</h2>
+								<p>Anfang des Jahres 2023 sponserte unser Verein den Schüler*innen Tischfußball- sowie Tischtennistische, welche in den Pausen & Freistunden aktiv genutzt werden können.</p>
+							</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-01">
+								<h2>Maturaball 2022</h2>
+								<p>8 JAHRE ZIRKUS - La Grande Finale, so lautete das Motto des Schulballs 2022.</p>
+							</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-04">
+								<h2>Robotik Junior EM 2022</h2>
+								<p>Gemeinsames Sponsoring mit anderen Sponsoren. <br><i>(Juni 2022)</i></p>
+							</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-04">
+								<h2>RoboCup Junior 2022</h2>
+								<p>Gemeinsames Sponsoring mit anderen Sponsoren. <br><i>(April 2022)</i></p>
+							</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-06">
+								<h2>Anschaffung von Laptops</h2>
+								<p>ProGYM unterstützt unsere Schule während der Pandemiezeit mit der Anschaffung zusätzlicher Laptops. <br><i>(2020-22)</i></p>
+							</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-06">
+								<h2>Jahresbericht 2019-22</h2>
+								<p>ProGYM ist Herausgeber des Jahresberichts, welcher alle Neuigkeiten & Informationen über das aktuelle Schuljahr enthält.</p>
+							</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-06">
+								<h2>Jahresbericht 2019</h2>
+								<p>ProGYM ist Herausgeber des Jahresberichts, welcher alle Neuigkeiten & Informationen über das aktuelle Schuljahr enthält.</p>
+							</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-05">
+								<h2>Maturantenfrühstück</h2>
+								<p>Am 06.05.2019 sponserte ProGYM den diesjährigen Maturant*innen zum Abschluss ein kleines Frühstück in der Aula unserer Schule!</p>
+							</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-06">
+								<h2>Preise für Pangea-Teilnehmer</h2>
+								<p>Den Geehrten wurden Urkunden und Preise überreicht, die freundlicherweise von ProGYM zur Verfügung gestellt wurden. <br><i>(02. Mai 2019)</i></p>
+							</div>
+						</div>	
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-04">
+								<h2>RoboCup Junior 2019</h2>
+								<p>Gemeinsames Sponsoring mit dem Elternverein. <br><i>(April 2019)</i></p>
+							</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-01">
+								<h2>Maturaball 2018</h2>
+								<p>Ein Weihnachtstraum, so lautete das Motto des Schulballs 2018.</p>
+							</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-03">
+								<h2>Kletterwand</h2>
+								<p>ProGYM sorgte mit einem zusätzlichen Sponsoring von € 30.000 dafür, dass die Kletterwand in einer Version, die den Anforderungen unserer Schule entspricht, errichtet werden konnte. <br><i>(August 2018)</i></p>
+							</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-06">
+								<h2>Jahresbericht 2018</h2>
+								<p>ProGYM ist Herausgeber des Jahresberichts, welcher alle Neuigkeiten & Informationen über das aktuelle Schuljahr enthält.</p>
+							</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-06">
+								<h2>Meet & Greet - Sparkasse</h2>
+								<p>In unserem Schulgebäude findet die Rederei – das Meet & Greet der Sparkasse NÖ Mitte West statt, organisiert vom Absolventen- und Förderverein ProGYM. <br><i>(24. Mai 2018)</i></p>
+							</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-08">
+								<h2>Maturantenfrühstück</h2>
+								<p>ProGYM sponserte den Maturant*innen des Jahres 2017/18 am 26. April 2018 zum Abschluss ein kleines Frühstück in der Aula unserer Schule!</p>
+							</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-06">
+								<h2>Buchgutscheine</h2>
+								<p>Heuer wurden den erfolgreichen Teilnehmern am Pangea-Wettbewerb Buchgutscheine überreicht. <br><i>(27. April 2018)</i></p>
+							</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-04">
+								<h2>RoboCup Junior 2018</h2>
+								<p>Gemeinsames Sponsoring mit dem Elternverein sowie der eEducation-Initiative der BMBWF. <br><i>(April 2018)</i></p>
+							</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-06">
+								<h2>Maturaball 2017</h2>
+								<p>Casino Royale - Spielerface, Pokerface und Matura!?, so lautete das Motto des Schulballs 2017.</p>
+							</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-06">
+								<h2>Jahresbericht 2017</h2>
+								<p>ProGYM ist Herausgeber des Jahresberichts, welcher alle Neuigkeiten & Informationen über das aktuelle Schuljahr enthält.</p>
+							</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-06">
+								<h2>ProGYM - Fest</h2>
+								<p><i>(28. Juni 2017)</i></p>
+							</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-06">
+								<h2>Maturantenfrühstück</h2>
+								<p>Um unseren Maturant*innen auch im Container einen guten Start in die prüfungsintensive Zeit zu wünschen, lud proGYM erstmals zu einem gemeinsamen Frühstück in der Schule ein. <br><i>(27. April 2017)</i></p>
+							</div>
+						</div>	
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-06">
+								<h2>Preise für Pangea-Teilnehmer</h2>
+								<p>Den Geehrten wurden Urkunden und Preise überreicht, die freundlicherweise von ProGYM zur Verfügung gestellt wurden. <br><i>(28. April 2017)</i></p>
+							</div>
+						</div>	
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-04">
+								<h2>RoboCup Junior 2017</h2>
+								<p>Gemeinsames Sponsoring mit dem Elternverein. <br><i>(April 2017)</i></p>
+							</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-06">
+								<h2>Maturaball 2016</h2>
+								<p>Space Night - Aufbruch in eine neue Galaxie, so lautete das Motto des Schulballs 2016.</p>
+							</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-06">
+								<h2>Jahresbericht 2016</h2>
+								<p>ProGYM ist Herausgeber des Jahresberichts, welcher alle Neuigkeiten & Informationen über das aktuelle Schuljahr enthält.</p>
+							</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-06">
+								<h2>ProGYM - Fest</h2>
+								<p><i>(29. Juni 2016)</i></p>
+							</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-06">
+								<h2>Büffet - Maturafeier</h2>
+								<p>ProGYM lädt anlässlich der Maturazeugnis-Übergabe zu einem Büffet. <br><i>(17. Juni 2016)</i></p>
+							</div>
+						</div>		
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-06">
+								<h2>Saalmiete - Forumkino</h2>
+								<p>ProGYM übernimmt auch die Saalmietefür die Aufführungen der Bühnenspielgruppen des Gymnasiums im Forumkino <br><i>(2015/16)</i></p>
+							</div>
+						</div>	
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-06">
+								<h2>Buchgutscheine</h2>
+								<p>Heuer wurden den erfolgreichen Teilnehmern am Pangea-Wettbewerb Buchgutscheine überreicht. <br><i>(2015/16)</i></p>
+							</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-06">
+								<h2>Maturaball 2015</h2>
+								<p>Prime Time, so lautete das Motto des Schulballs 2015.</p>
+							</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-06">
+								<h2>Jahresbericht 2015</h2>
+								<p>ProGYM ist Herausgeber des Jahresberichts, welcher alle Neuigkeiten & Informationen über das aktuelle Schuljahr enthält.</p>
+							</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-06">
+								<h2>ProGYM - Fest</h2>
+								<p><i>(1. Juli 2015)</i></p>
+							</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-06">
+								<h2>Büffet - Maturafeier</h2>
+								<p>ProGYM lädt anlässlich der Maturazeugnis-Übergabe zu einem Büffet. <br><i>(22. Juni 2015)</i></p>
+							</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-06">
+								<h2>Neuer Griller</h2>
+								<p>Heute wurde von ProGYM unter anderem ein neuer Griller für das Schulschlussfest angeschafft. <br><i>(2014/15)</i></p>
+							</div>
+						</div>		
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-06">
+								<h2>Maturaball 2014</h2>
+								<p>Dancing through the year, so lautete das Motto des Schulballs 2014.</p>
+							</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-06">
+								<h2>Jahresbericht 2014</h2>
+								<p>ProGYM ist Herausgeber des Jahresberichts, welcher alle Neuigkeiten & Informationen über das aktuelle Schuljahr enthält.</p>
+							</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-06">
+								<h2>ProGYM - Fest</h2>
+								<p><i>(25. Juni 2014)</i></p>
+							</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-06">
+								<h2>Maturaball 2013</h2>
+								<p>Tropical Night, so lautete das Motto des Schulballs 2013.</p>
+							</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-06">
+								<h2>Farbkopierer</h2>
+								<p>Heuer konnte ProGYM unter anderem den Ankauf von drei neuen hochwertigen Farbkopierern finanzieren. <br><i>(2013/14)</i></p>
+							</div>
+						</div>						
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-06">
+								<h2>Jahresbericht 2013</h2>
+								<p>ProGYM ist Herausgeber des Jahresberichts, welcher alle Neuigkeiten & Informationen über das aktuelle Schuljahr enthält.</p>
+							</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-06">
+								<h2>ProGYM - Fest</h2>
+								<p><i>(26. Juni 2013)</i></p>
+							</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-04">
+								<h2>RoboCup Junior 2013</h2>
+								<p>Gemeinsames Sponsoring mit dem Elternverein. <br><i>(April 2013)</i></p>
+							</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-06">
+								<h2>Beratungsnachmittag</h2>
+								<p>Der Elternverein organisiert gemeinsam mit dem Absolventenverein einen Beratungsnachmittag für die Schüler*innen der 7. und 8. Klassen. <br><i>(27. Februar 2013)</i></p>
+							</div>
+						</div>	
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-06">
+								<h2>Ausbildungskosten - Peermeditation</h2>
+								<p>ProGYM übernahm teilweise die Ausbildungskosten für den Hochschulkurs "Coaching für Peermediator*innen" für zwei Lehrerinnen. <br><i>(2012/2013)</i></p>
+							</div>
+						</div>	
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-06">
+								<h2>Desktop-Visualizer</h2>
+								<p>Heuer konnte ProGYM unter anderem den Ankauf von 18 weiteren Desktop-Visualizern finanzieren. <br><i>(2012/2013)</i></p>
+							</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-06">
+								<h2>Maturaball 2012</h2>
+								<p>Let the jukebox play again, so lautete das Motto des Schulballs 2012.</p>
+							</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-06">
+								<h2>Jahresbericht 2012</h2>
+								<p>ProGYM ist Herausgeber des Jahresberichts, welcher alle Neuigkeiten & Informationen über das aktuelle Schuljahr enthält.</p>
+							</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-06">
+								<h2>ProGYM - Fest</h2>
+								<p><i>(27. Juni 2012)</i></p>
+							</div>
+						</div>					
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-06">
+								<h2>Desktop-Visualizer</h2>
+								<p>Für das kommende Jahr wurde von „ProGYM“ der Ankauf von zwölf Desktop-Visualizern um etwa € 8.400,-beschlossen. <br><i>(2011/2012)</i></p>
+							</div>
+						</div>	
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-06">
+								<h2>Maturaball 2011</h2>
+								<p>Wild Wild West, so lautete das Motto des Schulballs 2011.</p>
+							</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-06">
+								<h2>Jahresbericht 2011</h2>
+								<p>ProGYM ist Herausgeber des Jahresberichts, welcher alle Neuigkeiten & Informationen über das aktuelle Schuljahr enthält.</p>
+							</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-06">
+								<h2>ProGYM - Fest</h2>
+								<p><i>(29. Juni 2011)</i></p>
+							</div>
+						</div>	
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-06">
+								<h2>Maturaball 2010</h2>
+								<p>/</p>
+							</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-06">
+								<h2>Elektronisches Klassenbuch</h2>
+								<p>Finanzielle Unterstützung des elektronisches Klassenbuchs. <br><i>(2009/2010)</i></p>
+							</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-06">
+								<h2>Jahresbericht 2010</h2>
+								<p>ProGYM ist Herausgeber des Jahresberichts, welcher alle Neuigkeiten & Informationen über das aktuelle Schuljahr enthält.</p>
+							</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-06">
+								<h2>ProGYM - Fest</h2>
+								<p><i>(30. Juni 2010)</i></p>
+							</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-06">
+								<h2>Generalversammlung - ProGYM</h2>
+								<p>Ordentliche Generalversammlung unseres Absolventen- und Fördervereins. <br><i>(17. Mai 2010)</i></p>
+							</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-06">
+								<h2>Maturaball 2009</h2>
+								<p>/</p>
+							</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-06">
+								<h2>Jahresbericht 2008</h2>
+								<p>ProGYM ist Herausgeber des Jahresberichts, welcher alle Neuigkeiten & Informationen über das aktuelle Schuljahr enthält.</p>
+							</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-06">
+								<h2>Büffet nach Wortgottesdienst</h2>
+								<p>ProGYM lädt nach dem Wortgottesdienst anlässlich der Maturazeugnis-Übergabe zu einem Büffet. <br><i>(10. Juni 2008)</i></p>
+							</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-06">
+								<h2>Neue Möbel</h2>
+								<p>Der Förderverein ProGYM finanzierte neue Möbel für den Schüleraufenthaltsraum. <br><i>(2008)</i></p>
+							</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-06">
+								<h2>Maturaball 2008</h2>
+								<p>/</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	    	<br>
+	</section> 
+	
+
+	
+	
+    <div id="plan" class="section wb">
+        <div class="container">
+            <div class="section-title text-center">
+                <h3>Möglichkeiten einer Mitgliedschaft</h3>
+                <p>Wenn du Interesse an einer Mitgliedschaft hast, fülle doch einfach das Formular aus!</p>
+            </div><!-- end title -->
+
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+                    <div class="message-box">
+                        <ul class="nav nav-pills nav-stacked" id="myTabs">
+                            <li><a class="active" href="#tab1" data-toggle="pill">Jahresbeitrag</a></li>
+                        </ul>
+                    </div>
+                </div><!-- end col -->
+            </div>
+
+            <hr class="invis">
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="tab-content">
+                        <div class="tab-pane active fade show" id="tab1">
+                            <div class="row text-center">
+                                <div class="col-md-4">
+                                    <div class="pricing-table pricing-table-highlighted">
+                                        <div class="pricing-table-header grd1">
+                                            <h2>10€</h2>
+                                            <h3>Ordentliches Mitglied <br>(Student*innen)</h3>
+                                        </div>
+                                        <div class="pricing-table-space"></div>
+                                        <div class="pricing-table-features">
+                                            <p><b><i class="fa fa-envelope-o" style="color:blue"></i></b>Einladung zu Aktivitäten</p>
+                                            <p><i class="fa fa-book" style="color:purple"></i>Kostenloser Jahresbericht</p>
+                                            <p><i class="fa fa-ticket" style="color:orange"></i>Ehrenkarte (Maturaball)</p>
+                                            <p><i class="fa fa-check" style="color:green"></i>Förderung & Unterstützung der Schüler*innen</p>
+                                        </div>
+                                        <div class="pricing-table-sign-up">
+                                            <a data-toggle="modal" data-target="#mitglied" class="hover-btn-new orange"><span>Zum Formular</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="pricing-table pricing-table-highlighted">
+                                        <div class="pricing-table-header grd1">
+                                            <h2>25€</h2>
+                                            <h3>Ordentliches Mitglied</h3>
+                                        </div>
+                                        <div class="pricing-table-space"></div>
+                                        <div class="pricing-table-features">
+                                            <p><b><i class="fa fa-envelope-o" style="color:blue"></i></b>Einladung zu Aktivitäten</p>
+                                            <p><i class="fa fa-book" style="color:purple"></i>Kostenloser Jahresbericht</p>
+                                            <p><i class="fa fa-ticket" style="color:orange"></i>Ehrenkarte (Maturaball)</p>
+                                            <p><i class="fa fa-check" style="color:green"></i>Förderung & Unterstützung der Schüler*innen</p>
+                                        </div>
+                                        <div class="pricing-table-sign-up">
+                                            <a data-toggle="modal" data-target="#mitglied" class="hover-btn-new orange"><span>Zum Formular</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="pricing-table pricing-table-highlighted">
+                                        <div class="pricing-table-header grd1">
+                                            <h2>75€</h2>
+                                            <h3>Förderndes Mitglied</h3>
+                                        </div>
+                                        <div class="pricing-table-space"></div>
+                                        <div class="pricing-table-features">
+                                            <p><b><i class="fa fa-envelope-o" style="color:blue"></i></b>Einladung zu Aktivitäten</p>
+                                            <p><i class="fa fa-book" style="color:purple"></i>Kostenloser Jahresbericht</p>
+                                            <p><i class="fa fa-ticket" style="color:orange"></i>Ehrenkarte (Maturaball)</p>
+                                            <p><i class="fa fa-check" style="color:green"></i>Förderung & Unterstützung der Schüler*innen</p>
+                                        </div>
+                                        <div class="pricing-table-sign-up">
+                                            <a data-toggle="modal" data-target="#mitglied" class="hover-btn-new orange"><span>Zum Formular</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- end row -->
+                        </div><!-- end pane -->
+
+                        <!--<div class="tab-pane fade" id="tab2">
+                            <div class="row text-center">
+                                <div class="col-md-4">
+                                    <div class="pricing-table pricing-table-highlighted">
+                                        <div class="pricing-table-header grd1">
+                                            <h2>$477</h2>
+                                            <h3>Year</h3>
+                                        </div>
+                                        <div class="pricing-table-space"></div>
+                                        <div class="pricing-table-features">
+                                            <p><i class="fa fa-envelope-o"></i> <strong>250</strong> Email Addresses</p>
+                                            <p><i class="fa fa-rocket"></i> <strong>125GB</strong> of Storage</p>
+                                            <p><i class="fa fa-database"></i> <strong>140</strong> Databases</p>
+                                            <p><i class="fa fa-link"></i> <strong>60</strong> Domains</p>
+                                            <p><i class="fa fa-life-ring"></i> <strong>24/7 Unlimited</strong> Support</p>
+                                        </div>
+                                        <div class="pricing-table-sign-up">
+                                            <a href="#" class="hover-btn-new orange"><span>Order Now</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="pricing-table pricing-table-highlighted">
+                                        <div class="pricing-table-header grd1">
+                                            <h2>$485</h2>
+                                            <h3>Year</h3>
+                                        </div>
+                                        <div class="pricing-table-space"></div>
+                                        <div class="pricing-table-features">
+                                            <p><i class="fa fa-envelope-o"></i> <strong>150</strong> Email Addresses</p>
+                                            <p><i class="fa fa-rocket"></i> <strong>65GB</strong> of Storage</p>
+                                            <p><i class="fa fa-database"></i> <strong>60</strong> Databases</p>
+                                            <p><i class="fa fa-link"></i> <strong>30</strong> Domains</p>
+                                            <p><i class="fa fa-life-ring"></i> <strong>24/7 Unlimited</strong> Support</p>
+                                        </div>
+                                        <div class="pricing-table-sign-up">
+                                            <a href="#" class="hover-btn-new orange"><span>Order Now</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="pricing-table pricing-table-highlighted">
+                                        <div class="pricing-table-header grd1">
+                                            <h2>$500</h2>
+                                            <h3>Year</h3>
+                                        </div>
+                                        <div class="pricing-table-space"></div>
+                                        <div class="pricing-table-features">
+                                            <p><i class="fa fa-envelope-o"></i> <strong>250</strong> Email Addresses</p>
+                                            <p><i class="fa fa-rocket"></i> <strong>125GB</strong> of Storage</p>
+                                            <p><i class="fa fa-database"></i> <strong>140</strong> Databases</p>
+                                            <p><i class="fa fa-link"></i> <strong>60</strong> Domains</p>
+                                            <p><i class="fa fa-life-ring"></i> <strong>24/7 Unlimited</strong> Support</p>
+                                        </div>
+                                        <div class="pricing-table-sign-up">
+                                            <a href="#" class="hover-btn-new orange"><span>Order Now</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- end row -->
+						<!--</div>--><!-- end pane -->
+                    </div><!-- end content -->
+                </div><!-- end col -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
+
+
+
+    <!--<div class="parallax section dbcolor">
+        <div class="container">
+            <div class="row logos">
+                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+                    <a href="#"><img src="images/logo_01.png" alt="" class="img-repsonsive"></a>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+                    <a href="#"><img src="images/logo_02.png" alt="" class="img-repsonsive"></a>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+                    <a href="#"><img src="images/logo_03.png" alt="" class="img-repsonsive"></a>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+                    <a href="#"><img src="images/logo_04.png" alt="" class="img-repsonsive"></a>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+                    <a href="#"><img src="images/logo_05.png" alt="" class="img-repsonsive"></a>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+                    <a href="#"><img src="images/logo_06.png" alt="" class="img-repsonsive"></a>
+                </div>
+            </div>
+        </div>
+    </div> -->
+</section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Über uns</h3>
+                        </div>
+                        <p>Wir sind eine Gemeinschaft von und für Absolvent*innen, Lehrer*innen und Freund*innen des Gymnasiums St. Pölten. Wir wollen dazu beitragen, dass unsere (ehemalige) Schule mehr ist als ein Ort der Wissensvermittlung.</p>   
+						<div class="footer-right">
+							<ul class="footer-links-soi">
+								<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+							</ul><!-- end links -->
+						</div>						
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+
+				<div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>ProGYM</h3>
+                        </div>
+                        <ul class="footer-links">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Vorstand</a></li>
+                            <li><a href="#">Projekte</a></li>
+							<li><a href="#">Archiv</a></li>
+							<li><a href="#">Kontakt</a></li>
+                        </ul><!-- end links -->
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+				
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Impressum</h3>
+                        </div>
+
+                        <ul class="footer-links">
+                            <li><a href="mailto:#">Mail: progym@progym.at</a></li>
+                            <li><a href="#">Telefon: 02742/72959</a></li>
+                            <li>Absolventen- und Förderverein des <br> BG/BRG St. Pölten Josefstraße 84 <br>3100 St. Pölten</li>
+                        </ul><!-- end links -->
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+				
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </footer><!-- end footer -->
+
+    <div class="copyrights">
+        <div class="container">
+            <div class="footer-distributed">
+                <div class="footer-center">                   
+                    <p class="footer-company-name"><a data-toggle="modal" data-target="#login">ProGYM &copy; 2023 | Design (html design)</a></p>
+                </div>
+            </div>
+        </div><!-- end container -->
+    </div><!-- end copyrights -->
+
+    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+
+    <!-- ALL JS FILES -->
+    <script src="js/all.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/custom.js"></script>
+	<script src="js/timeline.min.js"></script>
+	<script>
+		timeline(document.querySelectorAll('.timeline'), {
+			forceVerticalMode: 700,
+			mode: 'horizontal',
+			verticalStartPosition: 'left',
+			visibleItems: 4
+		});
+	</script>
+</body>
+</html>
